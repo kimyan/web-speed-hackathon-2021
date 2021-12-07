@@ -21,7 +21,7 @@ const AppContainer = () => {
   }, [pathname]);
 
   const [activeUser, setActiveUser] = React.useState(null);
-  const { data, isLoading } = useFetch('/api/v1/me', fetchJSON);
+  const { data, isLoading } = useFetch('https://23gy2miuxu.ap-northeast-1.awsapprunner.com/api/v1/me', fetchJSON);
   React.useEffect(() => {
     setActiveUser(data);
   }, [data]);
